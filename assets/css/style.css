@@ -10,7 +10,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-.container {}
+.container {
+  display: flex;
+  flex-direction: column;
+}
 
 .header {
   width: 100vw;
