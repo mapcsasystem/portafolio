@@ -145,7 +145,8 @@
         }
 
         #sobremi .contenedor-foto {
-            max-width: 400px;
+            width: 1100px;
+            max-width: 350px;
             margin-right: 80px;
         }
 
@@ -239,6 +240,7 @@
         }
 
         #servicios .fila .servicio {
+            width: 33.3%;
             max-width: 350px;
             background-color: #fff;
             padding: 30px;
@@ -251,16 +253,6 @@
             box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
         }
 
-        #servicios .fila .servicio .icono {
-            display: inline-block;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: #d3d3d3;
-            padding: 20px;
-            margin-bottom: 25px;
-        }
-
         #servicios .fila .servicio h4 {
             font-size: 22px;
             margin-bottom: 25px;
@@ -271,13 +263,6 @@
             margin: auto;
             color: #000;
             margin-bottom: 25px;
-        }
-
-        #servicios .fila .servicio ul {
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 10px;
         }
 
         #servicios .fila .servicio p {
@@ -576,6 +561,10 @@
 
             #servicios .fila .servicio {
                 margin: 10px auto;
+            }
+
+            #servicios .fila .servicio {
+                width: 90%;
             }
 
             /* seccion HABLIDADES MI */
