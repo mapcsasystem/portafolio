@@ -36,7 +36,7 @@ function goTo(url) {
  * Enviar email
  */
 
-const btn = document.getElementById('button');
+const btn = document.getElementById('button-email');
 
 document.getElementById('form')
     .addEventListener('submit', function (event) {
