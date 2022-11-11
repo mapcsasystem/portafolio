@@ -32,6 +32,10 @@ function goTo(url) {
     window.open(url, '_blank').focus();
 }
 
+/**
+ * Enviar email
+ */
+
 const btn = document.getElementById('button');
 
 document.getElementById('form')
