@@ -313,20 +313,23 @@
     <section id="contacto">
         <h3 class="titulo-seccion">Contactanos ahora</h3>
         <div class="contenedor-form">
-            <form action="">
+            <form id="form">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
-                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                    <input type="text" name="fullName" placeholder="Nombre Completo *" class="input-mitad" required
+                        title="Campo requerido.">
+                    <input type="email" name="email" placeholder="Dirección de Email" class="input-mitad" required
+                        title="Campo requerido.">
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Tema..." class="input-full">
+                    <input type="text" name="tema" placeholder="Tema..." class="input-full" required
+                        title="Campo requerido.">
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
-                        class="input-full"></textarea>
+                    <textarea name="descripcion" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"
+                        required title="Campo requerido."></textarea>
                 </div>
 
-                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                <input type="submit" id="button" value="Enviar email">
             </form>
         </div>
     </section>
@@ -352,6 +355,11 @@
     </footer>
 
     <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('GxWXnzVQT9FCFUfOX')
+    </script>
 </body>
 
 </html>

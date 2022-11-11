@@ -31,3 +31,24 @@ window.onscroll = function () { efectoHabilidades() };
 function goTo(url) {
     window.open(url, '_blank').focus();
 }
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+    .addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        btn.value = 'Enviando...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_e6gem1s';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                btn.value = 'Enviar email';
+                alert('Enviado!');
+            }, (err) => {
+                btn.value = 'Enviar email';
+                alert(JSON.stringify(err));
+            });
+    });
