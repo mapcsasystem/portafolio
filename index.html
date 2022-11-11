@@ -27,8 +27,9 @@
                         <ul id="links">
                             <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
                             <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
-                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SKILLS</a></li>
                             <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#hobbys" onclick="seleccionar(this)">HOBBYS</a></li>
                             <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
                     </nav>
@@ -64,10 +65,10 @@
     <!-- SECCION S O B R E M I -->
     <section id="sobremi">
         <div class="contenedor-foto">
-            <img src="./assets/img/foto.jpg" alt="">
+            <img src="./assets/img/foto.jpeg" alt="foto personal">
         </div>
         <div class="sobremi">
-            <p class="titulo-seccion">Sobre Mi</p>
+            <p class="titulo-seccion">Sobre Mí</p>
             <h2>Hola, Soy <span>Miguel Angel Pérez Contreras</span> </h2>
             <h3>Desarrollador Frontend - Backend</h3>
             <p>
@@ -87,12 +88,14 @@
         </div>
     </section>
 
+    <!-- <i class="fa-brands fa-python"></i> -->
+
     <!-- SECCION S E R V I C I O S -->
     <section id="servicios">
-        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <h3 class="titulo-seccion">SKILLS</h3>
         <div class="fila">
             <div class="servicio">
-                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <span class="icono"><i class="fa-brands fa-angular"></i></span>
                 <h4>Diseño de Sitios Web</h4>
                 <hr>
                 <ul class="servicios-tag">
@@ -105,7 +108,7 @@
                 </p>
             </div>
             <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <span class="icono"><i class="fa-brands fa-html5"></i></span>
                 <h4>Porgramación PHP</h4>
                 <hr>
                 <ul class="servicios-tag">
@@ -117,7 +120,7 @@
                 </p>
             </div>
             <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <span class="icono"><i class="fa-brands fa-css3-alt"></i></span>
                 <h4>Posicionamiento SEO</h4>
                 <hr>
                 <ul class="servicios-tag">
@@ -143,7 +146,7 @@
                 </p>
             </div>
             <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-palette"></i></span>
+                <span class="icono"><i class="fa-brands fa-node"></i></span>
                 <h4>Diseñador Gráfico</h4>
                 <hr>
                 <ul class="servicios-tag">
@@ -169,51 +172,6 @@
         </div>
     </section>
 
-    <!-- SECCION H A B I L I D A D E S -->
-    <div class="contenedor-skills" id="skills">
-        <h3>HABILIDADES </h3>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Html & Css</p>
-                <span class="porcentaje">95%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="html"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Javascript</p>
-                <span class="porcentaje">90%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="js"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Bases de Datos</p>
-                <span class="porcentaje">90%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="bd"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Photoshop</p>
-                <span class="porcentaje">85%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="ps"></div>
-            </div>
-        </div>
-    </div>
-
     <!-- SECCION PORTAFOLIO -->
     <section id="portfolio">
         <h3 class="titulo-seccion">Mis Proyectos</h3>
@@ -224,7 +182,7 @@
                 <img src="assets/img/proyecto1.png" alt="">
                 <div class="info">
                     <div class="info-flex">
-                        <h4 onclick="goto('https://github.com/mapcsasystem/encriptador-oracle-reto-1')">Demo</h4>
+                        <h4 onclick="goto('https://mapcsasystem.github.io/encriptador-oracle-reto-1/')">Demo</h4>
                         <h4 onclick="goto('https://github.com/mapcsasystem/encriptador-oracle-reto-1')">Repositorio</h4>
                     </div>
                 </div>
@@ -256,6 +214,10 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="hobbys">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
     </section>
 
     <!-- SECCTION C O N T A C T O -->
